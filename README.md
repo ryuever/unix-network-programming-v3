@@ -116,10 +116,10 @@ not "yet" at the level of Posix.1g or X/Open XNS Issue 5.
   might generate warnings from your compiler, since you are printing
   a long without a corresponding long format specifier.
 
-# Issues when you compile source files and the corresponding resolutions
+# Issues when compiling source files and the corresponding resolutions
 ## cd ../libfree
 
-```C
+```shell
 inet_ntop.c: In function ‘inet_ntop’:
 inet_ntop.c:60:9: error: argument ‘size’ doesn’t match prototype
   size_t size;
@@ -129,7 +129,7 @@ inet_ntop.c:60:9: error: argument ‘size’ doesn’t match prototype
 
 ## cd ../libroute
 
-```C
+```shell
 In file included from get_rtaddrs.c:1:0:
 unproute.h:3:45: fatal error: net/if_dl.h: No such file or directory
  #include <net/if_dl.h>  /* sockaddr_sdl{} */
@@ -139,7 +139,7 @@ leave it alone, no fix this
 
 ## cd ../intro
 
-```C
+```shell
 ~/git/unpv13e/intro$ ./daytimetcpcli 127.0.0.1
 connect error: Connection refused
 ``` 
