@@ -1,0 +1,12 @@
+# temp file generated due to using Emacs
+\#*
+.#*
+*~
+
+# object file
+*.o
+
+# output file,such a.out
+*.out
+
+TAGS
