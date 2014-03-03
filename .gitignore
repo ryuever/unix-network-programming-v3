@@ -5,6 +5,7 @@
 
 # object file
 *.o
+libunp.a
 
 # output file,such a.out
 *.out
