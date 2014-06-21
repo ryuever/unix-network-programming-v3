@@ -66,14 +66,14 @@ ssize_t Readline(int fd, void *ptr, size_t maxlen){
   return(n);
 }
 
-int main(){
-  int filedesc3 = open("test.txt",O_RDWR);
-  /* my_read(filedesc3,&c3); */
-  /* printf("c3 is : %c", c3); */
+/* int main(){ */
+/*   int filedesc3 = open("test.txt",O_RDWR); */
+/*   /\* my_read(filedesc3,&c3); *\/ */
+/*   /\* printf("c3 is : %c", c3); *\/ */
   
-  char str[50];  
-  readline(filedesc3,str,49);
-  printf("str is : %s",str);
+/*   char str[50];   */
+/*   readline(filedesc3,str,49); */
+/*   printf("str is : %s",str); */
   
-  return 0;
-}
+/*   return 0; */
+/* } */

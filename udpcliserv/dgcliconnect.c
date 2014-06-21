@@ -10,7 +10,7 @@ dg_cli(FILE *fp, int sockfd, const SA *pservaddr, socklen_t servlen)
 
 	while (Fgets(sendline, MAXLINE, fp) != NULL) {
 
-		Write(sockfd, sendline, strlen(sendline));
+ 		Write(sockfd, sendline, strlen(sendline));
 
 		n = Read(sockfd, recvline, MAXLINE);
 

@@ -27,6 +27,7 @@ main(int argc, char **argv)
 		if (fputs(recvline, stdout) == EOF)
 			err_sys("fputs error");
 	}
+    
 	if (n < 0)
 		err_sys("read error");
 
