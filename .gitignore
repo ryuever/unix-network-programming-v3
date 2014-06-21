@@ -9,5 +9,6 @@ libunp.a
 
 # output file,such a.out
 *.out
+*.lc
 
 TAGS
