@@ -1,5 +1,6 @@
 include ../Make.defines
 
+CC = clang
 PROGS =	daytimetcpcli daytimetcpsrv2 mycat openfile \
 	tfcred01 unixbind unixstrcli01 unixstrserv01 unixstrserv02
 
