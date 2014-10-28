@@ -136,7 +136,7 @@ inet_ntop(af, src, dst, size)
 Developer/SDKs/MacOSX10.10.sdk/usr/include/arpa/inet.h:77:13: note: 
       previous declaration is here
 const char      *inet_ntop(int, const void *, char *, socklen_t);
-```shell
+```
 
 ## cd ../libroute
 
