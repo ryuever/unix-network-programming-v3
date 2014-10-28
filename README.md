@@ -124,8 +124,19 @@ inet_ntop.c: In function ‘inet_ntop’:
 inet_ntop.c:60:9: error: argument ‘size’ doesn’t match prototype
   size_t size;
 ```
+Resolution : `inet_ntop.c` on line 61 : `size_t size` -> `socklen_t size`
 
-`inet_ntop.c` on line 61 : `size_t size` -> `socklen_t size`
+If you run this program on Mac, for this step error message is a little different. 
+Anyway, the resoltion is the same.
+```shell
+inet_ntop.c:56:1: error: conflicting types for 'inet_ntop'
+inet_ntop(af, src, dst, size)
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/
+Developer/SDKs/MacOSX10.10.sdk/usr/include/arpa/inet.h:77:13: note: 
+      previous declaration is here
+const char      *inet_ntop(int, const void *, char *, socklen_t);
+```shell
 
 ## cd ../libroute
 
